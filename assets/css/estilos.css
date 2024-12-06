@@ -487,6 +487,8 @@ img {
     }
     .sources__tags {
         display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
         
     }
     
@@ -499,7 +501,9 @@ img {
         background-color: var(--color-primario-medio);
         color: var(--color-oscuro);
         margin-top: 16px;
-        padding: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
         
       
     }
@@ -534,9 +538,10 @@ img {
     .sources__links {
         background-color: var(--color-primario-medio);
         color: var(--color-primario-oscuro);
-        padding: 16px;
+        padding-top: 16px;
         margin-top: 16px;
-    }
+        padding-bottom: 16px;
+            }
     
     .source__tags--link {
         margin: 12px;
@@ -631,15 +636,22 @@ img {
         .presentation__info {
             margin: 16px auto;
         }
+        
+        
+    
     
         .sources__tags--link {
             display: flex;
             flex-direction: row;
             text-align: center;
+            
         }
-    
+
+        
         .sources {
             margin: 16px auto;
+            
+            
         }
     
         .aside {
